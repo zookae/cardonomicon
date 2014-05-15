@@ -1,0 +1,14 @@
+* turn structure
+** TODO planner enforces costs on cards played
+** TODO planner enforces actions for each card in play
+** TODO planner prevents actions out of phase
+** TODO planner tracks delayed or reactionary effects
+** TODO actions target using deictic variables to substitute
+** TODO types constrain what effects may apply to
+** TODO track pools of cards in hand, deck, floor/mat -> generalize to N spaces cards move around + constraints on allowed actions by phase (assume noop if none defined)
+
+* card definition
+** TODO phase constraints
+** TODO costs of actions
+** TODO stats - health, cost to play
+** TODO attributes for actions - attack, target types
