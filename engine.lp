@@ -31,6 +31,10 @@ lte_v(cast_spell,(player,health,5)).
 post_v(cast_spell,(player,health,1)).
 cost(cast_spell,1).
 
+
+
+
+
 %%% PLANNER %%%
 holds(0,F) :- init(F).
 #show holds/2.
