@@ -18,3 +18,11 @@
    CLOSED: [2014-05-15 Thu 13:51]
 ** TODO stats - health, cost to play
 ** TODO attributes for actions - attack, target types
+
+
+* games
+** TODO Magic
+** TODO Hearthstone
+** TODO Dominion
+** TODO Stratego
+** TODO Baten Kaidos
