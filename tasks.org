@@ -5,11 +5,13 @@
    CLOSED: [2014-05-15 Thu 13:51]
 ** DONE planner prevents actions out of phase
    CLOSED: [2014-05-15 Thu 13:51]
-** TODO planner tracks delayed or reactionary effects
-** TODO actions target using deictic variables to substitute
-** TODO types constrain what effects may apply to
 ** DONE track pools of cards in hand, deck, floor/mat -> generalize to N spaces cards move around + constraints on allowed actions by phase (assume noop if none defined)
    CLOSED: [2014-05-15 Thu 13:56]
+** DONE generate ordering of game phases, enforce actions follow order
+   CLOSED: [2014-05-16 Fri 07:17]
+** TODO types constrain what effects may apply to
+** TODO actions target using deictic variables to substitute
+** TODO planner tracks delayed or reactionary effects
 
 * card definition
 ** DONE phase constraints
