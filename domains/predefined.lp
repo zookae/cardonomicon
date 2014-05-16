@@ -14,11 +14,21 @@ init((c1,loc,deck)).
 init((c2,loc,deck)).
 init((player,health,5)).
 
+%*
 action(draw_card).
 pre_p(draw_card,(c1,loc,deck)).
 post_p(draw_card,(c1,loc,hand)).
 cost(draw_card,2).
 phase(draw_card,0).
+*%
+
+action(cast_spell).
+%gte_v(cast_spell,(player,health,5)).
+%lte_v(cast_spell,(player,health,5)).
+%eq_v(cast_spell,(player,health,5)).
+post_v(cast_spell,(player,health,1)).
+cost(cast_spell,1).
+phase(cast_spell,1).
 
 %*
 action(play_card).
@@ -26,12 +36,6 @@ pre_p(play_card,(c1,loc,hand)).
 post_p(play_card,(c1,loc,mat)).
 cost(play_card,2).
 
-action(cast_spell).
-%gte_v(cast_spell,(player,health,5)).
-lte_v(cast_spell,(player,health,5)).
-%eq_v(cast_spell,(player,health,5)).
-post_v(cast_spell,(player,health,1)).
-cost(cast_spell,1).
 
 
 

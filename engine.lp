@@ -1,7 +1,7 @@
-turn(1..t).
-phase(1..p).
+turn(0..t).
+phase(0..p).
 
-time(0..t*p).
+time(0..t*p-1).
 #show time/1.
 
 % initialize state
@@ -22,6 +22,8 @@ holds(-1,F) :- init(F).
 :- act(T,A), eq_v(A,(E,P,Vpre)), holds(T-1,(E,P,V)), Vpre != V.
 :- act(T,A), gte_v(A,(E,P,Vpre)), holds(T-1,(E,P,V)), Vpre > V.
 :- act(T,A), lte_v(A,(E,P,Vpre)), holds(T-1,(E,P,V)), Vpre < V.
+
+
 
 % enforce turn phases
 :- act(T,A), phase(A,Tp), T\p != Tp.
